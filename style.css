@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --red-wine: #940101;
+  --papyrus: #faf2d7;
+ 
+}
+
+body {
+  background-color: var(--papyrus);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  color: var(--red-wine);
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.3rem;
+  margin: 20px 0;
+}
+
+.input-container {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.convert-btn {
+  background-color: var(--red-wine);
+  color: var(--papyrus);
+  cursor: pointer;
+  border: none;
+  padding: 4px;
+}
+
+.number-input {
+  height: 25px;
+}
+
+#output {
+  margin: 10px 0;
+  min-width: 200px;
+  width: fit-content;
+  min-height: 80px;
+  word-break: break-word;
+  padding: 15px;
+  border: 5px solid var(--red-wine);
+  font-size: 2rem;
+  text-align: center;
+}
+
+
+@media screen and (min-width: 500px) {
+  .input-container {
+    flex-direction: row;
+  }
+
+  #result {
+    max-width: 460px;
+  }
+}
